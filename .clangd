@@ -1,0 +1,8 @@
+CompileFlags:
+  CompilationDatabase: "wam_ws/build"
+  Add: [
+    "-std=c++17",
+  ]
+
+Index:
+  Background: Build

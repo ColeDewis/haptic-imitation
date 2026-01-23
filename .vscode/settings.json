@@ -1,0 +1,19 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages",
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "${workspaceFolder}/wam_ws/install/wam_msgs/local/lib/python3.10/dist-packages",
+        "${workspaceFolder}/wam_ws/install/wam_srvs/local/lib/python3.10/dist-packages",
+        "${workspaceFolder}/wam_ws/install/bhand_srvs/local/lib/python3.10/dist-packages",
+        "${workspaceFolder}/wam_ws/install/bhand_srvs/local/lib/python3.10/dist-packages",
+    ],
+    "clangd.arguments": [
+        "--background-index",
+        "--query-driver=/usr/bin/g++,/usr/bin/gcc",
+        "--header-insertion=never"
+    ]
+}
