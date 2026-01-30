@@ -1,5 +1,8 @@
-numpy==2.2.5
-opencv-python==4.13.0.90
+numpy
+opencv-python
 scipy==1.15.3
 scikit-learn==1.7.2
 unzip==1.0.0
+tqdm
+h5py
+fpsample

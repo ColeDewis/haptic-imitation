@@ -59,6 +59,8 @@ RUN echo "source /home/user/wam-ros2-docker/wam_ws/install/setup.bash" >> ~/.bas
 # formats terminal to look normal, but with a red (fr3-docker) prefix to indicate docker environment
 RUN sed -i 's/#force_color_prompt=yes/force_color_prompt=yes/' ~/.bashrc
 RUN echo "export PS1='\[\e[1;31m\](wam-docker) \e[1;32m\]\u@\h\[\e[0m\]:\[\e[1;34m\]\w\[\e[0m\]\$ '" >> /root/.bashrc
+RUN echo "export RCUTILS_COLORIZED_OUTPUT=1" >> ~/.bashrc
+RUN echo "export TERM=xterm-256color" >> ~/.bashrc
 
 # Build alis
 RUN echo "alias build_ros='colcon build --symlink-install --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON'" >> /root/.bashrc
