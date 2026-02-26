@@ -70,7 +70,7 @@ ENV TORCH_CUDA_ARCH_LIST="6.0 6.1 7.0 7.5 8.0 8.6+PTX 8.9"
 RUN echo "export LD_LIBRARY_PATH=/usr/local/lib:\$LD_LIBRARY_PATH" >> ~/.bashrc
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 RUN echo "alias die='tmux kill-session'" >> ~/.bashrc
-RUN echo "source /home/user/wam-ros2-docker/wam_ws/install/setup.bash" >> ~/.bashrc
+RUN echo "source /home/user/haptic-imitation/wam_ws/install/setup.bash" >> ~/.bashrc
 
 
 # formats terminal to look normal, but with a red (fr3-docker) prefix to indicate docker environment

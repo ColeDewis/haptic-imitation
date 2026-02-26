@@ -2,7 +2,7 @@
 
 # Define the source (where your configs are in the repo) 
 # and the target (where libbarrett expects them)
-REPO_CONFIG_DIR="/home/user/wam-ros2-docker/barrett_cfgs"
+REPO_CONFIG_DIR="/home/user/haptic-imitation/barrett_cfgs"
 TARGET_DIR="$HOME/.barrett"
 
 TARGET_DIR="$HOME/.barrett"

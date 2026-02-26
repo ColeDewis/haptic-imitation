@@ -1,9 +1,9 @@
 version: "3.8"
 services:
-  wam-ros2-docker:
-    image: wam-ros2-docker:${USER}
-    container_name: wam-ros2-docker
-    working_dir: /home/user/wam-ros2-docker
+  haptic-imitation:
+    image: haptic-imitation:${USER}
+    container_name: haptic-imitation
+    working_dir: /home/user/haptic-imitation
     build:
       context: .
       dockerfile: Dockerfile.cuda
@@ -16,7 +16,7 @@ services:
       - DISPLAY=${DISPLAY}
     volumes:
       # - /home/${USER}/.config/barrett:/etc/barrett
-      - ../wam-ros2-docker:/home/user/wam-ros2-docker
+      - ../haptic-imitation:/home/user/haptic-imitation
       - /tmp/.X11-unix:/tmp/.X11-unix
     deploy:
       resources:
@@ -24,4 +24,4 @@ services:
           devices:
             - driver: nvidia
               count: 1
-              capabilities: [gpu]
+              capabilities: [ gpu ]

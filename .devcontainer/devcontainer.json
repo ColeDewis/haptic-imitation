@@ -1,7 +1,7 @@
 {
   "dockerComposeFile": "../docker-compose.yml",
-  "service": "wam-ros2-docker",
-  "workspaceFolder": "/home/user/wam-ros2-docker",
+  "service": "haptic-imitation",
+  "workspaceFolder": "/home/user/haptic-imitation",
   "shutdownAction": "stopCompose",
   "postAttachCommand": "bash barrett_cfgs/link_configs.sh",
   "customizations": {

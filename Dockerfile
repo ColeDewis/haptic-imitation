@@ -53,7 +53,7 @@ RUN git clone https://github.com/sergey-khl/bear_ide.git \
 RUN echo "export LD_LIBRARY_PATH=/usr/local/lib:\$LD_LIBRARY_PATH" >> ~/.bashrc
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 RUN echo "alias die='tmux kill-session'" >> ~/.bashrc
-RUN echo "source /home/user/wam-ros2-docker/wam_ws/install/setup.bash" >> ~/.bashrc
+RUN echo "source /home/user/haptic-imitation/wam_ws/install/setup.bash" >> ~/.bashrc
 
 
 # formats terminal to look normal, but with a red (fr3-docker) prefix to indicate docker environment
